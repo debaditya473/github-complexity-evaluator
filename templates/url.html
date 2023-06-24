@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge" />
+  <title>
+    GitHub Automated Analysis
+  </title>
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="navbar">
+      <h2> </h2>
+  </div>
+  <hr>
+
+  <div class="container">
+  <h2>GitHub Automated Analysis</h2>
+ 
+    <div class="card" style="width:1400px">
+     
+    <div class="card-body ">
+      {{msg}}
+    </div>
+    <br>
+     <h4 class="card-text">Click on the button to return the most technically challenging repository</h4>
+    <form action = "/pipeline" method="post" enctype="multipart/form-data">
+        <input type= "submit" name="pipeline" value="Return Most Challenging Repository" class="btn btn-primary">
+    </form>
+    
+  </div>
+  <br>
+</div>
+
+</body>
+
+</html>
